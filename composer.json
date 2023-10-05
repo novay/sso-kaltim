@@ -1,0 +1,34 @@
+{
+    "name": "novay/sso-kaltim",
+    "description": "Single Sign-On Kalimantan Timur.",
+    "keywords": ["laravel", "sso", "kaltim"],
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/novay/sso-kaltim",
+    "authors": [
+        {
+            "name": "Novianto Rahmadi",
+            "email": "novay@btekno.id"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Novay\\SSOKaltim\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {}, 
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Novay\\SSOKaltim\\SSOServiceProvider"
+            ], 
+            "aliases": {
+                "SSO" : "Novay\\SSOKaltim\\SSO"
+            }
+        }
+    }
+}

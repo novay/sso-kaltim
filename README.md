@@ -1,0 +1,1 @@
+php artisan migrate --path=vendor/novay/sso-kaltim/src/Database/migrations/2023_09_26_100536_create_oauths_table.php
